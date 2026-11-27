@@ -197,14 +197,21 @@
   grid-column: 2;
   grid-row: 1;
 
-  padding: 28px;
+  display: flex;
+  align-items: center;
 
   background-color: #0E2747;
   color: #FFFFFF;
 }
 
 .loans__content {
+  position: relative;
+  z-index: 2;
+
+  width: 65%;
   height: 100%;
+  padding: 25px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -213,41 +220,52 @@
 .loans__highlight {
   color: #F7F3EC;
   font-family: 'Fraunces', serif;
-  font-size: clamp(55px, 5vw, 72px);
+  font-size: clamp(48px, 4vw, 65px);
   font-weight: 600;
   line-height: 1;
-  letter-spacing: -2px;
 }
 
 .loans__label {
-  margin-top: 5px;
-  margin-bottom: 20px;
-
+  margin-top: 6px;
+  margin-bottom: 18px;
   color: #F7F3EC;
   font-family: 'Manrope', sans-serif;
-  font-size: 11px;
-  font-weight: 500;
+  font-size: 10px;
 }
 
 .loans__content h3 {
   margin: 0 0 8px;
-
   color: #FFFFFF;
   font-family: 'Fraunces', serif;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 23px;
 }
 
 .loans__content p {
-  max-width: 300px;
+  max-width: 230px;
   margin: 0;
-
   color: #FFFFFF;
   font-family: 'Manrope', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.7;
+  
 }
 
+.loans__image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 38%;
+  height: 85%;
+  overflow: hidden;
+  border-radius: 50% 50% 0 0 / 25% 25% 0 0;
+}
+
+.loans__image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
 /* ========================================
    3. BUSINESS BANKING
 ======================================== */
@@ -499,6 +517,16 @@
   .loans__highlight {
     font-size: 65px;
   }
+
+  .loans__content {
+  width: 65%;
+  padding: 20px;
+}
+
+.loans__image {
+  width: 38%;
+  height: 80%;
+}
 
   /* Business */
   .business__content {

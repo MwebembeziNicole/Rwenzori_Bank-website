@@ -71,6 +71,17 @@ function Services() {
                 that follow your harvest season.
               </p>
             </div>
+
+            <div className="loans__image">
+                <img
+                    src="/images/loans.jpg"
+                    alt="Customer accessing financial support through banking services."
+                />
+            </div>
+
+            <span className="service-card__arrow" aria-hidden="true">
+              →
+            </span>
           </Link>
 
           {/* 3. Business Banking */}
@@ -93,7 +104,7 @@ function Services() {
 
             <div className="business__image">
               <img
-                src="/images/credit-card.jpg"
+                src="/images/credit card.jpg"
                 alt="Bank card representing convenient business payment services."
               />
             </div>
